@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply font-sans text-ink antialiased; background: linear-gradient(135deg, #e4e2ff 0%, #c7c3fb 100%); background-attachment: fixed; }
+.task-check { appearance:none; width:22px; height:22px; flex-shrink:0; border:1.5px solid #c9c9d6; border-radius:9999px; cursor:pointer; transition:all .15s; }
+.task-check:hover { border-color:#6b4ef6; }
+.task-check:checked { background:#22b573; border-color:#22b573; }
+.task-check:checked::after { content:''; display:block; width:5px; height:10px; margin:2px 0 0 7px; border:solid white; border-width:0 2px 2px 0; transform:rotate(45deg); }

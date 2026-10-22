@@ -1,0 +1,1 @@
+export default function Stats({ total, completed }) { return <div className="flex items-center justify-between pt-4 pb-1 px-1 text-xs text-muted"><span>Tarefas totais: <b className="text-ink">{total}</b></span><span>Concluídas: <b className="text-ok">{completed}</b> de {total}</span></div> }
